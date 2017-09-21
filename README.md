@@ -8,6 +8,8 @@ Voyager
 
 Sudhir Nallam(psn240): Part-time master's student at CDS in last semester. I have 7+ years of work experience in coding with Python and Java. Presently I am working as software engineer at IBM Watson Research Center. I work on predictive analysis and deep learning. My interests are working in deep learning(NLP and/or Vision), Inference problems in unsupervised settings, time-series data and predictive analysis. Apart from core classes I have taken Deep Learning, NLP with Deep Learning, Inference and Representation etc., classes.
 
+Xiaoyu Wang (xw1435): I'm currently a second year master of data science student at CDS. My background is in Applied Mathematics and Statistics. The past summer I was working with a project on ventricular tachycardia origins determination through modeling electrocardiogram signals both in supervised and unsupervised learning settings. My interest lies in interpreting and understanding deep neural networks. Aside from core courses, I also took topological data analysis and graph signal processing, which aims at exploring data analysis from a different approach. 
+
 # Reason for Teaming Up
 
 # Top 3 Project Choices
