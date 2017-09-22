@@ -12,6 +12,8 @@ Xiaoyu Wang (xw1435): I'm currently a second year master of data science student
 
 # Reason for Teaming Up
 
+Both share strong interests in deep learning and its application on biomedical research. 
+
 # Top 3 Project Choices
 
 1. Any of the Breast cancer screening projects: In all the three projects we deal with major challege in computer vision, that is, handling high resolution images. In multi-view deep convolutional neural (MVDCN) network for breast screening done by prof. Kyunghyun Cho and Dr. Krzysztof J. Geras, handled this high resoltion images. By replicating their work, I will be coming up with a approach which would applied to multiple domains, where anomalies are hidden in high density data.  
