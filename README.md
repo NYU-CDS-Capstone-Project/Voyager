@@ -10,6 +10,10 @@ Sudhir Nallam(psn240): Part-time master's student at CDS in last semester. I hav
 
 Xiaoyu Wang (xw1435): I'm currently a second year master of data science student at CDS. My background is in Applied Mathematics and Statistics. The past summer I was working with a project on ventricular tachycardia origins determination through modeling electrocardiogram signals both in supervised and unsupervised learning settings. My interest lies in interpreting and understanding deep neural networks. Aside from core courses, I also took topological data analysis and graph signal processing, which aims at exploring data analysis from a different approach. 
 
+Yurui Mu: Yurui received her B.S. degree in Applied Mathematics and Statistics at SUNY Stony Brook. And she is now a second year full-time graduate student at NYU Center for Data Science. She has past research experience at National Supercomputing Center in Jinan, China. She has also worked as intern at MENUSIFU Inc. as data analyst. Having taken Machine Learning, Big Data, Deep Learning, Text As Data courses at CDS, she is interested in applications of machine learning in various fields of study.
+
+Wenqing Zhu: Wenqing is also a second-year Data Science student at New York University. She has attained her B.A. degree in Mathematics and Economics at University of Illinois Urbana-Champaign. She has taken classes such as Machine Learning, Deep Learning, and Fundamentals of Algorithms for the past year. For coding, Wenqing has a programming background in Python and MapReduce.  
+
 # Reason for Teaming Up
 
 Both share strong interests in deep learning and its application on biomedical research. 
