@@ -16,7 +16,7 @@ Wenqing Zhu: Wenqing is also a second-year Data Science student at New York Univ
 
 # Reason for Teaming Up
 
-Both share strong interests in deep learning and its application on biomedical research. 
+We all share strong interests in deep learning and its application on applied physics and biomedical research. 
 
 # Top 3 Project Choices
 
