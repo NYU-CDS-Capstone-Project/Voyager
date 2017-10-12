@@ -22,5 +22,5 @@ We all share strong interests in deep learning and its application on applied ph
 
 1. Any of the Breast cancer screening projects: In all the three projects we deal with major challege in computer vision, that is, handling high resolution images. In multi-view deep convolutional neural (MVDCN) network for breast screening done by prof. Kyunghyun Cho and Dr. Krzysztof J. Geras, handled this high resoltion images. By replicating their work, I will be coming up with a approach which would applied to multiple domains, where anomalies are hidden in high density data.  
 2. Applied Bioinformatics Laboratories project: In this project we get a chance to apply deep learning techniques we learned to classifying the lung cancer sub-types.  
-3. Robust method for QCD RNN netowrks: Using neural network to detect the particles genrated in a particle collider.(Selected) 
+3. (Selected)Robust method for QCD RNN netowrks: Using neural network to detect the particles genrated in a particle collider. 
 
