@@ -1,0 +1,36 @@
+2017-11-06 22:42:18,333 Logfile at reports/Nov-6/22-42-18/log.txt
+2017-11-06 22:42:18,333 	batch_size = 64
+2017-11-06 22:42:18,333 	data_list_filename = evaldatasets.txt
+2017-11-06 22:42:18,333 	debug = False
+2017-11-06 22:42:18,333 	gpu = -1
+2017-11-06 22:42:18,333 	leaves = False
+2017-11-06 22:42:18,333 	load_rocs = None
+2017-11-06 22:42:18,334 	model_list_filename = evalmodels.txt
+2017-11-06 22:42:18,334 	n_iters = 1
+2017-11-06 22:42:18,334 	n_test = -1
+2017-11-06 22:42:18,334 	password = deeplearning
+2017-11-06 22:42:18,334 	plot = False
+2017-11-06 22:42:18,334 	recipient = None
+2017-11-06 22:42:18,334 	remove_outliers = False
+2017-11-06 22:42:18,334 	seed = 1
+2017-11-06 22:42:18,334 	sender = results74207281@gmail.com
+2017-11-06 22:42:18,334 	set = test
+2017-11-06 22:42:18,335 	silent = False
+2017-11-06 22:42:18,335 	verbose = True
+2017-11-06 22:42:18,335 	PID = 8522
+2017-11-06 22:42:18,335 	Running on GPU: False
+2017-11-06 22:42:18,335 DATA PATHS
+antikt-kt
+2017-11-06 22:42:18,336 MODEL PATHS
+RecNN-simple/evaltest
+2017-11-06 22:42:18,336 Building ROCs for models trained on antikt-kt
+2017-11-06 22:42:18,337 TF already computed. Loading it.
+2017-11-06 22:42:20,030 Data loaded and already preprocessed
+2017-11-06 22:42:26,806 Cropping...
+2017-11-06 22:43:26,740 37972 (selected) + 62028 (cropped) = 100000
+2017-11-06 22:43:27,107 	After cropping: X size = 37971
+2017-11-06 22:43:27,134 	After cropping: y size = 37971
+2017-11-06 22:43:27,149 	Building ROCs for instances of RecNN-simple/evaltest
+2017-11-06 22:43:27,153 		Mean ROC AUC = nan
+2017-11-06 22:43:27,155 []
+2017-11-06 22:43:27,155 R, F, T shape000

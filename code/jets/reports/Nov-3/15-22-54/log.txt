@@ -1,0 +1,28 @@
+2017-11-03 15:22:54,496 Logfile at reports/Nov-3/15-22-54/log.txt
+2017-11-03 15:22:54,496 	batch_size = 64
+2017-11-03 15:22:54,496 	data_list_filename = evaldatasets.txt
+2017-11-03 15:22:54,496 	debug = False
+2017-11-03 15:22:54,496 	gpu = -1
+2017-11-03 15:22:54,496 	leaves = False
+2017-11-03 15:22:54,496 	load_rocs = None
+2017-11-03 15:22:54,496 	model_list_filename = evalmodels.txt
+2017-11-03 15:22:54,497 	n_iters = 1
+2017-11-03 15:22:54,497 	n_test = -1
+2017-11-03 15:22:54,497 	password = deeplearning
+2017-11-03 15:22:54,497 	plot = False
+2017-11-03 15:22:54,497 	recipient = None
+2017-11-03 15:22:54,497 	remove_outliers = False
+2017-11-03 15:22:54,497 	seed = 1
+2017-11-03 15:22:54,497 	sender = results74207281@gmail.com
+2017-11-03 15:22:54,497 	set = test
+2017-11-03 15:22:54,497 	silent = False
+2017-11-03 15:22:54,497 	verbose = True
+2017-11-03 15:22:54,498 	PID = 70857
+2017-11-03 15:22:54,498 	Running on GPU: False
+2017-11-03 15:22:54,498 DATA PATHS
+antikt-kt
+2017-11-03 15:22:54,499 MODEL PATHS
+RecNN-simple/evaltest
+2017-11-03 15:22:54,499 Building ROCs for models trained on antikt-kt
+2017-11-03 15:22:54,499 Computing TF from antikt-kt-train.pickle
+2017-11-03 15:22:54,499 Preprocessing...

@@ -1,0 +1,73 @@
+2017-11-01 11:03:57,540 Logfile at RelationNet/Nov-1/11-03-57/log.txt
+2017-11-01 11:03:57,540 	DATA_DIR = /scratch/psn240/capstone/data/w-vs-qcd/pickles
+2017-11-01 11:03:57,540 	MODELS_DIR = models
+2017-11-01 11:03:57,540 	MODEL_TYPES = ['RelationNet', 'RecNN-simple', 'RecNN-gated', 'MPNN']
+2017-11-01 11:03:57,540 	TRANSFORMS = [<class 'architectures.relation_net.RelNNTransformConnected'>, <class 'architectures.recursive_net.GRNNTransformSimple'>, <class 'architectures.recursive_net.GRNNTransformGated'>, <class 'architectures.message_net.message_net.MPNNTransform'>]
+2017-11-01 11:03:57,540 	add_cropped = False
+2017-11-01 11:03:57,540 	batch_size = 64
+2017-11-01 11:03:57,541 	bs = 9
+2017-11-01 11:03:57,541 	debug = True
+2017-11-01 11:03:57,541 	decay = 0.912
+2017-11-01 11:03:57,541 	filename = antikt-kt
+2017-11-01 11:03:57,541 	gpu = -1
+2017-11-01 11:03:57,541 	leaves = False
+2017-11-01 11:03:57,541 	load = None
+2017-11-01 11:03:57,541 	model_type = 0
+2017-11-01 11:03:57,541 	n_epochs = 3
+2017-11-01 11:03:57,542 	n_features = 7
+2017-11-01 11:03:57,542 	n_hidden = 1
+2017-11-01 11:03:57,542 	n_iters = 1
+2017-11-01 11:03:57,542 	n_train = 1000
+2017-11-01 11:03:57,542 	n_valid = 200
+2017-11-01 11:03:57,542 	password = deeplearning
+2017-11-01 11:03:57,542 	recipient = None
+2017-11-01 11:03:57,542 	restart = False
+2017-11-01 11:03:57,542 	seed = 1
+2017-11-01 11:03:57,542 	sender = results74207281@gmail.com
+2017-11-01 11:03:57,543 	silent = False
+2017-11-01 11:03:57,543 	step_size = 0.001
+2017-11-01 11:03:57,543 	verbose = True
+2017-11-01 11:03:57,543 	PID = 3091
+2017-11-01 11:03:57,543 	Running on GPU: False
+2017-11-01 11:03:57,543 Loading data...
+2017-11-01 11:03:57,544 Computing TF from antikt-kt-train.pickle
+2017-11-01 11:03:57,545 Preprocessing...
+2017-11-01 11:18:39,313 Preprocessed the data and saved it to /scratch/psn240/capstone/data/w-vs-qcd/pickles/preprocessed/antikt-kt-train.pickle
+2017-11-01 11:18:45,859 Saved TF to /scratch/psn240/capstone/data/w-vs-qcd/pickles/tf/TF-antikt-kt-train.pickle
+2017-11-01 11:18:47,721 Data loaded and already preprocessed
+2017-11-01 11:18:55,189 Splitting into train and validation...
+2017-11-01 11:18:55,190 	raw train size = 800
+2017-11-01 11:18:55,190 	raw valid size = 200
+2017-11-01 11:18:55,190 Cropping...
+2017-11-01 11:18:55,191 85 (selected) + 115 (cropped) = 200
+2017-11-01 11:18:55,192 	final train size = 800
+2017-11-01 11:18:55,192 	final valid size = 85
+2017-11-01 11:18:55,197 PredictFromParticleEmbedding (
+  (transform): RelNNTransformConnected (
+    (fc_u): Linear (7 -> 1)
+    (fc_u1): Linear (1 -> 1)
+    (fc_edge): Linear (1 -> 1)
+  )
+  (fc1): Linear (1 -> 1)
+  (fc2): Linear (1 -> 1)
+  (fc3): Linear (1 -> 1)
+)
+2017-11-01 11:18:55,198 Number of parameters: 18
+2017-11-01 11:18:55,199 Training...
+2017-11-01 11:18:55,199 epoch = 0
+2017-11-01 11:18:55,199 step_size = 0.00100000
+2017-11-01 11:18:55,791 NaN in 1/FPR
+
+2017-11-01 11:18:55,792     0	~loss(train)=0.7384	loss(valid)=0.7384	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:18:58,004 epoch = 1
+2017-11-01 11:18:58,005 step_size = 0.00091200
+2017-11-01 11:18:58,407 NaN in 1/FPR
+
+2017-11-01 11:18:58,408     0	~loss(train)=0.7346	loss(valid)=0.7346	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:19:00,848 epoch = 2
+2017-11-01 11:19:00,848 step_size = 0.00083174
+2017-11-01 11:19:01,289 NaN in 1/FPR
+
+2017-11-01 11:19:01,289     0	~loss(train)=0.7311	loss(valid)=0.7311	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:19:03,318 FINISHED TRAINING
+2017-11-01 11:19:03,319 Completed on Nov-1 at 11:19:03

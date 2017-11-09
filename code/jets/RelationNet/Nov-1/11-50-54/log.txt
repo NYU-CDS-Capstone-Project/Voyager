@@ -1,0 +1,79 @@
+2017-11-01 11:50:54,508 Logfile at RelationNet/Nov-1/11-50-54/log.txt
+2017-11-01 11:50:54,508 	DATA_DIR = /scratch/psn240/capstone/data/w-vs-qcd/pickles
+2017-11-01 11:50:54,508 	MODELS_DIR = models
+2017-11-01 11:50:54,508 	MODEL_TYPES = ['RelationNet', 'RecNN-simple', 'RecNN-gated', 'MPNN']
+2017-11-01 11:50:54,508 	TRANSFORMS = [<class 'architectures.relation_net.RelNNTransformConnected'>, <class 'architectures.recursive_net.GRNNTransformSimple'>, <class 'architectures.recursive_net.GRNNTransformGated'>, <class 'architectures.message_net.message_net.MPNNTransform'>]
+2017-11-01 11:50:54,509 	add_cropped = False
+2017-11-01 11:50:54,509 	batch_size = 64
+2017-11-01 11:50:54,509 	debug = False
+2017-11-01 11:50:54,509 	decay = 0.912
+2017-11-01 11:50:54,509 	filename = antikt-kt
+2017-11-01 11:50:54,509 	gpu = -1
+2017-11-01 11:50:54,509 	leaves = False
+2017-11-01 11:50:54,509 	load = None
+2017-11-01 11:50:54,509 	model_type = 0
+2017-11-01 11:50:54,510 	n_epochs = 25
+2017-11-01 11:50:54,510 	n_features = 7
+2017-11-01 11:50:54,510 	n_hidden = 40
+2017-11-01 11:50:54,510 	n_iters = 1
+2017-11-01 11:50:54,510 	n_train = -1
+2017-11-01 11:50:54,510 	n_valid = 27000
+2017-11-01 11:50:54,510 	password = deeplearning
+2017-11-01 11:50:54,510 	recipient = psn240@nyu.edu
+2017-11-01 11:50:54,510 	restart = False
+2017-11-01 11:50:54,511 	seed = 1
+2017-11-01 11:50:54,511 	sender = results74207281@gmail.com
+2017-11-01 11:50:54,511 	silent = False
+2017-11-01 11:50:54,511 	step_size = 0.001
+2017-11-01 11:50:54,511 	verbose = False
+2017-11-01 11:50:54,511 	PID = 4246
+2017-11-01 11:50:54,511 	Running on GPU: False
+2017-11-01 11:50:54,511 Loading data...
+2017-11-01 11:50:54,514 TF already computed. Loading it.
+2017-11-01 11:50:56,530 Data loaded and already preprocessed
+2017-11-01 11:51:04,307 Splitting into train and validation...
+2017-11-01 11:51:04,340 	raw train size = 73000
+2017-11-01 11:51:04,340 	raw valid size = 27000
+2017-11-01 11:51:04,340 Cropping...
+2017-11-01 11:51:09,091 10211 (selected) + 16789 (cropped) = 27000
+2017-11-01 11:51:09,179 	final train size = 73000
+2017-11-01 11:51:09,180 	final valid size = 10211
+2017-11-01 11:51:09,196 PredictFromParticleEmbedding (
+  (transform): RelNNTransformConnected (
+    (fc_u): Linear (7 -> 40)
+    (fc_u1): Linear (40 -> 40)
+    (fc_edge): Linear (40 -> 40)
+  )
+  (fc1): Linear (40 -> 40)
+  (fc2): Linear (40 -> 40)
+  (fc3): Linear (40 -> 1)
+)
+2017-11-01 11:51:09,197 Number of parameters: 6921
+2017-11-01 11:51:09,198 Training...
+2017-11-01 11:51:09,198 epoch = 0
+2017-11-01 11:51:09,198 step_size = 0.00100000
+2017-11-01 12:12:00,412     0	~loss(train)=0.7436	loss(valid)=0.6965	roc_auc(valid)=0.6889	1/FPR @ TPR = 0.5: 4.29	Best 1/FPR @ TPR = 0.5: 4.29
+2017-11-01 12:36:14,089    25	~loss(train)=0.6507	loss(valid)=0.6417	roc_auc(valid)=0.8044	1/FPR @ TPR = 0.5: 9.99	Best 1/FPR @ TPR = 0.5: 9.99
+2017-11-01 13:00:33,687    50	~loss(train)=0.6236	loss(valid)=0.5818	roc_auc(valid)=0.8160	1/FPR @ TPR = 0.5: 10.99	Best 1/FPR @ TPR = 0.5: 10.99
+2017-11-01 13:24:49,960    75	~loss(train)=0.6052	loss(valid)=0.5578	roc_auc(valid)=0.8241	1/FPR @ TPR = 0.5: 11.79	Best 1/FPR @ TPR = 0.5: 11.79
+2017-11-01 13:48:54,617   100	~loss(train)=0.5963	loss(valid)=0.5724	roc_auc(valid)=0.8302	1/FPR @ TPR = 0.5: 11.56	Best 1/FPR @ TPR = 0.5: 11.79
+2017-11-01 14:13:14,397   125	~loss(train)=0.5797	loss(valid)=0.5264	roc_auc(valid)=0.8342	1/FPR @ TPR = 0.5: 12.23	Best 1/FPR @ TPR = 0.5: 12.23
+2017-11-01 14:37:30,728   150	~loss(train)=0.5707	loss(valid)=0.5237	roc_auc(valid)=0.8357	1/FPR @ TPR = 0.5: 12.39	Best 1/FPR @ TPR = 0.5: 12.39
+2017-11-01 15:01:50,117   175	~loss(train)=0.5835	loss(valid)=0.5748	roc_auc(valid)=0.8376	1/FPR @ TPR = 0.5: 12.40	Best 1/FPR @ TPR = 0.5: 12.40
+2017-11-01 15:25:57,644   200	~loss(train)=0.5814	loss(valid)=0.5122	roc_auc(valid)=0.8395	1/FPR @ TPR = 0.5: 12.69	Best 1/FPR @ TPR = 0.5: 12.69
+2017-11-01 15:50:19,121   225	~loss(train)=0.5484	loss(valid)=0.5086	roc_auc(valid)=0.8434	1/FPR @ TPR = 0.5: 13.55	Best 1/FPR @ TPR = 0.5: 13.55
+2017-11-01 16:14:40,263   250	~loss(train)=0.5434	loss(valid)=0.4970	roc_auc(valid)=0.8448	1/FPR @ TPR = 0.5: 13.71	Best 1/FPR @ TPR = 0.5: 13.71
+2017-11-01 16:39:00,598   275	~loss(train)=0.5339	loss(valid)=0.5096	roc_auc(valid)=0.8485	1/FPR @ TPR = 0.5: 14.06	Best 1/FPR @ TPR = 0.5: 14.06
+2017-11-01 17:03:18,321   300	~loss(train)=0.5629	loss(valid)=0.5572	roc_auc(valid)=0.8500	1/FPR @ TPR = 0.5: 14.72	Best 1/FPR @ TPR = 0.5: 14.72
+2017-11-01 17:27:27,033   325	~loss(train)=0.5373	loss(valid)=0.5246	roc_auc(valid)=0.8531	1/FPR @ TPR = 0.5: 14.76	Best 1/FPR @ TPR = 0.5: 14.76
+2017-11-01 17:51:24,803   350	~loss(train)=0.5171	loss(valid)=0.4843	roc_auc(valid)=0.8558	1/FPR @ TPR = 0.5: 15.03	Best 1/FPR @ TPR = 0.5: 15.03
+2017-11-01 18:15:58,126   375	~loss(train)=0.5261	loss(valid)=0.5107	roc_auc(valid)=0.8587	1/FPR @ TPR = 0.5: 15.90	Best 1/FPR @ TPR = 0.5: 15.90
+2017-11-01 18:40:10,703   400	~loss(train)=0.5287	loss(valid)=0.5191	roc_auc(valid)=0.8620	1/FPR @ TPR = 0.5: 17.00	Best 1/FPR @ TPR = 0.5: 17.00
+2017-11-01 19:04:00,768   425	~loss(train)=0.5032	loss(valid)=0.4786	roc_auc(valid)=0.8643	1/FPR @ TPR = 0.5: 17.22	Best 1/FPR @ TPR = 0.5: 17.22
+2017-11-01 19:27:53,997   450	~loss(train)=0.5053	loss(valid)=0.4883	roc_auc(valid)=0.8672	1/FPR @ TPR = 0.5: 18.30	Best 1/FPR @ TPR = 0.5: 18.30
+2017-11-01 19:52:01,328   475	~loss(train)=0.4970	loss(valid)=0.4659	roc_auc(valid)=0.8702	1/FPR @ TPR = 0.5: 18.89	Best 1/FPR @ TPR = 0.5: 18.89
+2017-11-01 20:15:54,706   500	~loss(train)=0.5032	loss(valid)=0.4520	roc_auc(valid)=0.8722	1/FPR @ TPR = 0.5: 18.69	Best 1/FPR @ TPR = 0.5: 18.89
+2017-11-01 20:39:35,315   525	~loss(train)=0.4894	loss(valid)=0.4513	roc_auc(valid)=0.8732	1/FPR @ TPR = 0.5: 19.04	Best 1/FPR @ TPR = 0.5: 19.04
+2017-11-01 21:03:31,357   550	~loss(train)=0.4924	loss(valid)=0.4742	roc_auc(valid)=0.8739	1/FPR @ TPR = 0.5: 19.52	Best 1/FPR @ TPR = 0.5: 19.52
+2017-11-01 21:27:09,721   575	~loss(train)=0.5459	loss(valid)=0.5516	roc_auc(valid)=0.8771	1/FPR @ TPR = 0.5: 20.69	Best 1/FPR @ TPR = 0.5: 20.69
+2017-11-01 21:51:07,931   600	~loss(train)=0.4937	loss(valid)=0.4416	roc_auc(valid)=0.8768	1/FPR @ TPR = 0.5: 20.84	Best 1/FPR @ TPR = 0.5: 20.84

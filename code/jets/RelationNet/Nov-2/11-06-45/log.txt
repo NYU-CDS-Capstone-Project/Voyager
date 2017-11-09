@@ -1,0 +1,60 @@
+2017-11-02 11:06:45,143 Logfile at RelationNet/Nov-2/11-06-45/log.txt
+2017-11-02 11:06:45,143 	DATA_DIR = /scratch/psn240/capstone/data/w-vs-qcd/pickles/
+2017-11-02 11:06:45,144 	MODELS_DIR = models
+2017-11-02 11:06:45,144 	MODEL_TYPES = ['RelationNet', 'RecNN-simple', 'RecNN-gated', 'MPNN']
+2017-11-02 11:06:45,144 	TRANSFORMS = [<class 'architectures.relation_net.RelNNTransformConnected'>, <class 'architectures.recursive_net.GRNNTransformSimple'>, <class 'architectures.recursive_net.GRNNTransformGated'>, <class 'architectures.message_net.message_net.MPNNTransform'>]
+2017-11-02 11:06:45,144 	add_cropped = False
+2017-11-02 11:06:45,144 	batch_size = 64
+2017-11-02 11:06:45,144 	debug = False
+2017-11-02 11:06:45,144 	decay = 0.912
+2017-11-02 11:06:45,144 	filename = antikt-kt
+2017-11-02 11:06:45,144 	gpu = -1
+2017-11-02 11:06:45,145 	leaves = False
+2017-11-02 11:06:45,145 	load = None
+2017-11-02 11:06:45,145 	model_type = 0
+2017-11-02 11:06:45,145 	n_epochs = 1
+2017-11-02 11:06:45,145 	n_features = 7
+2017-11-02 11:06:45,145 	n_hidden = 40
+2017-11-02 11:06:45,145 	n_iters = 1
+2017-11-02 11:06:45,145 	n_train = -1
+2017-11-02 11:06:45,145 	n_valid = 27000
+2017-11-02 11:06:45,146 	password = deeplearning
+2017-11-02 11:06:45,146 	recipient = psn240@nyu.edu
+2017-11-02 11:06:45,146 	restart = False
+2017-11-02 11:06:45,146 	seed = 1
+2017-11-02 11:06:45,146 	sender = results74207281@gmail.com
+2017-11-02 11:06:45,146 	silent = False
+2017-11-02 11:06:45,146 	step_size = 0.001
+2017-11-02 11:06:45,146 	verbose = True
+2017-11-02 11:06:45,146 	PID = 25632
+2017-11-02 11:06:45,147 	Running on GPU: False
+2017-11-02 11:06:45,147 Loading data...
+2017-11-02 11:06:45,148 TF already computed. Loading it.
+2017-11-02 11:06:47,379 Data loaded and already preprocessed
+2017-11-02 11:06:55,343 Splitting into train and validation...
+2017-11-02 11:06:55,381 	raw train size = 73000
+2017-11-02 11:06:55,382 	raw valid size = 27000
+2017-11-02 11:06:55,382 Cropping...
+2017-11-02 11:07:00,176 10211 (selected) + 16789 (cropped) = 27000
+2017-11-02 11:07:00,271 	final train size = 73000
+2017-11-02 11:07:00,271 	final valid size = 10211
+2017-11-02 11:07:00,274 PredictFromParticleEmbedding (
+  (transform): RelNNTransformConnected (
+    (fc_u): Linear (7 -> 40)
+    (fc_u1): Linear (40 -> 40)
+    (fc_edge): Linear (40 -> 40)
+  )
+  (fc1): Linear (40 -> 40)
+  (fc2): Linear (40 -> 40)
+  (fc3): Linear (40 -> 1)
+)
+2017-11-02 11:07:00,274 Number of parameters: 6921
+2017-11-02 11:07:00,275 Training...
+2017-11-02 11:07:00,275 epoch = 0
+2017-11-02 11:07:00,275 step_size = 0.00100000
+2017-11-02 11:07:00,276 Number of batches = 1141
+2017-11-02 11:07:00,276 batch# = 0
+2017-11-02 11:07:00,276 Here 1
+2017-11-02 11:07:06,779 Here 2
+2017-11-02 11:07:06,780 Here 2_1
+2017-11-02 11:07:06,781 Here 7

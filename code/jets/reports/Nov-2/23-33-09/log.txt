@@ -1,0 +1,34 @@
+2017-11-02 23:33:09,679 Logfile at reports/Nov-2/23-33-09/log.txt
+2017-11-02 23:33:09,680 	batch_size = 64
+2017-11-02 23:33:09,680 	data_list_filename = evaldatasets.txt
+2017-11-02 23:33:09,680 	debug = False
+2017-11-02 23:33:09,680 	gpu = -1
+2017-11-02 23:33:09,680 	leaves = False
+2017-11-02 23:33:09,680 	load_rocs = None
+2017-11-02 23:33:09,680 	model_list_filename = evalmodels.txt
+2017-11-02 23:33:09,680 	n_iters = 1
+2017-11-02 23:33:09,680 	n_test = -1
+2017-11-02 23:33:09,680 	password = deeplearning
+2017-11-02 23:33:09,680 	plot = False
+2017-11-02 23:33:09,680 	recipient = psn240@nyu.edu
+2017-11-02 23:33:09,680 	remove_outliers = False
+2017-11-02 23:33:09,680 	seed = 1
+2017-11-02 23:33:09,681 	sender = results74207281@gmail.com
+2017-11-02 23:33:09,681 	set = test
+2017-11-02 23:33:09,681 	silent = False
+2017-11-02 23:33:09,681 	verbose = True
+2017-11-02 23:33:09,681 	PID = 180869
+2017-11-02 23:33:09,681 	Running on GPU: False
+2017-11-02 23:33:09,701 DATA PATHS
+antikt-kt
+2017-11-02 23:33:09,701 MODEL PATHS
+RecNN-simple/evaltest
+2017-11-02 23:33:09,701 Building ROCs for models trained on antikt-kt
+2017-11-02 23:33:09,702 TF already computed. Loading it.
+2017-11-02 23:33:09,718 Preprocessing...
+2017-11-02 23:40:24,598 Preprocessed the data and saved it to /scratch/psn240/capstone/data/w-vs-qcd/pickles/preprocessed/antikt-kt-test.pickle
+2017-11-02 23:40:28,730 Cropping...
+2017-11-02 23:41:13,313 37972 (selected) + 62028 (cropped) = 100000
+2017-11-02 23:41:13,735 	After cropping: X size = 37971
+2017-11-02 23:41:13,736 	After cropping: y size = 37971
+2017-11-02 23:41:13,739 	Building ROCs for instances of RecNN-simple/evaltest

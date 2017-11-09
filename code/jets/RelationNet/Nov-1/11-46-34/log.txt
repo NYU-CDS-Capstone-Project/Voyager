@@ -1,0 +1,71 @@
+2017-11-01 11:46:34,386 Logfile at RelationNet/Nov-1/11-46-34/log.txt
+2017-11-01 11:46:34,386 	DATA_DIR = /scratch/psn240/capstone/data/w-vs-qcd/pickles
+2017-11-01 11:46:34,387 	MODELS_DIR = models
+2017-11-01 11:46:34,387 	MODEL_TYPES = ['RelationNet', 'RecNN-simple', 'RecNN-gated', 'MPNN']
+2017-11-01 11:46:34,387 	TRANSFORMS = [<class 'architectures.relation_net.RelNNTransformConnected'>, <class 'architectures.recursive_net.GRNNTransformSimple'>, <class 'architectures.recursive_net.GRNNTransformGated'>, <class 'architectures.message_net.message_net.MPNNTransform'>]
+2017-11-01 11:46:34,387 	add_cropped = False
+2017-11-01 11:46:34,387 	batch_size = 64
+2017-11-01 11:46:34,387 	bs = 9
+2017-11-01 11:46:34,387 	debug = True
+2017-11-01 11:46:34,387 	decay = 0.912
+2017-11-01 11:46:34,388 	filename = antikt-kt
+2017-11-01 11:46:34,388 	gpu = -1
+2017-11-01 11:46:34,388 	leaves = False
+2017-11-01 11:46:34,388 	load = None
+2017-11-01 11:46:34,388 	model_type = 0
+2017-11-01 11:46:34,388 	n_epochs = 3
+2017-11-01 11:46:34,388 	n_features = 7
+2017-11-01 11:46:34,388 	n_hidden = 1
+2017-11-01 11:46:34,388 	n_iters = 1
+2017-11-01 11:46:34,389 	n_train = 1000
+2017-11-01 11:46:34,389 	n_valid = 200
+2017-11-01 11:46:34,389 	password = deeplearning
+2017-11-01 11:46:34,389 	recipient = psn240@nyu.edu
+2017-11-01 11:46:34,389 	restart = False
+2017-11-01 11:46:34,389 	seed = 1
+2017-11-01 11:46:34,389 	sender = results74207281@gmail.com
+2017-11-01 11:46:34,389 	silent = False
+2017-11-01 11:46:34,389 	step_size = 0.001
+2017-11-01 11:46:34,390 	verbose = True
+2017-11-01 11:46:34,390 	PID = 4068
+2017-11-01 11:46:34,390 	Running on GPU: False
+2017-11-01 11:46:34,390 Loading data...
+2017-11-01 11:46:34,418 TF already computed. Loading it.
+2017-11-01 11:46:38,484 Data loaded and already preprocessed
+2017-11-01 11:46:46,216 Splitting into train and validation...
+2017-11-01 11:46:46,218 	raw train size = 800
+2017-11-01 11:46:46,218 	raw valid size = 200
+2017-11-01 11:46:46,219 Cropping...
+2017-11-01 11:46:46,219 85 (selected) + 115 (cropped) = 200
+2017-11-01 11:46:46,225 	final train size = 800
+2017-11-01 11:46:46,225 	final valid size = 85
+2017-11-01 11:46:46,227 PredictFromParticleEmbedding (
+  (transform): RelNNTransformConnected (
+    (fc_u): Linear (7 -> 1)
+    (fc_u1): Linear (1 -> 1)
+    (fc_edge): Linear (1 -> 1)
+  )
+  (fc1): Linear (1 -> 1)
+  (fc2): Linear (1 -> 1)
+  (fc3): Linear (1 -> 1)
+)
+2017-11-01 11:46:46,228 Number of parameters: 18
+2017-11-01 11:46:46,229 Training...
+2017-11-01 11:46:46,229 epoch = 0
+2017-11-01 11:46:46,229 step_size = 0.00100000
+2017-11-01 11:46:46,858 NaN in 1/FPR
+
+2017-11-01 11:46:46,858     0	~loss(train)=0.7384	loss(valid)=0.7384	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:46:49,121 epoch = 1
+2017-11-01 11:46:49,121 step_size = 0.00091200
+2017-11-01 11:46:49,528 NaN in 1/FPR
+
+2017-11-01 11:46:49,528     0	~loss(train)=0.7346	loss(valid)=0.7346	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:46:52,057 epoch = 2
+2017-11-01 11:46:52,058 step_size = 0.00083174
+2017-11-01 11:46:52,513 NaN in 1/FPR
+
+2017-11-01 11:46:52,514     0	~loss(train)=0.7311	loss(valid)=0.7311	roc_auc(valid)=0.5000	1/FPR @ TPR = 0.5: nan	Best 1/FPR @ TPR = 0.5: -inf
+2017-11-01 11:46:54,507 FINISHED TRAINING
+2017-11-01 11:46:54,508 Completed on Nov-1 at 11:46:54
+2017-11-01 11:46:55,483 SENT EMAIL
