@@ -1,0 +1,4 @@
+# Updates
+1. We would like to replicated the results QCD paper with other dataset
+2. Remove the noise/pileup parameters using gated RNN's and adding adveserial loss.
+3. We don't see any foreseeable problems at this time and planning to deliver all over project goals within deadline.
