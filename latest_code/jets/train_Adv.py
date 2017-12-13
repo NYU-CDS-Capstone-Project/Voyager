@@ -422,6 +422,7 @@ def train(args):
     os.mkdir(pathset)
     np.save(os.path.join(pathset, 'rnn_loss.csv'), np.array(loss_rnn))
     np.save(os.path.join(pathset, 'adv_loss.csv'), np.array(loss_adv))
+    np.save(os.path.join(pathset, 'total_loss.csv'), np.array(loss))
     eh.finished()
     
 
