@@ -370,6 +370,7 @@ def train(args):
     iteration=1
     loss_rnn = []
     loss_adv = []
+    loss = []
     logging.info("Lambda selected = %.8f" % args.lmbda)
     for i in range(args.epochs):
         logging.info("epoch = %d" % i)
@@ -396,6 +397,7 @@ def train(args):
             l_adv = F.nll_loss(adversarial_model(y_pred), Z_var)
             loss_adv.append(l_adv.data.cpu().numpy()[0])
             l = l_rnn - (args.lmbda*l_adv)
+            loss.append(l.data.cpu().numpy()[0])
             #Taking step on classifier
             optimizer.step()
             l.backward(retain_graph=True)
