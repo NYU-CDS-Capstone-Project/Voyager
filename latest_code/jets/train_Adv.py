@@ -380,6 +380,7 @@ def train(args):
             model.train()
             adversarial_model.train()
             optimizer.zero_grad()
+            optimizer_adv.zero_grad()
             start = torch.round(torch.rand(1) * (len(X_train) - args.batch_size)).numpy()[0].astype(np.int32)
             idx = slice(start, start+args.batch_size)
             X, y, Z = X_train[idx], y_train[idx], Z_train[idx]
@@ -395,11 +396,14 @@ def train(args):
             l_adv = F.nll_loss(adversarial_model(y_pred), Z_var)
             loss_adv.append(l_adv.data.cpu().numpy()[0])
             l = l_rnn - (args.lmbda*l_adv)
-            l.backward()
-            if iteration % 2 == 0:
-                optimizer.step()
-            else:            
-                optimizer_adv.step()
+            #Taking step on classifier
+            optimizer.step()
+            l.backward(retain_graph=True)
+            
+            #Taking step on advesarial
+            optimizer_adv.step()
+            l_adv.backward()
+            
             X = unwrap_X(X_var); y = unwrap(y_var)
             callback(i, iteration, model)
         t1 = time.time()
