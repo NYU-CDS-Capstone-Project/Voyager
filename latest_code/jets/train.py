@@ -121,7 +121,7 @@ def train(args):
     logging.warning("\traw train size = %d" % len(X_train))
     logging.warning("\traw valid size = %d" % len(X_valid_uncropped))
 
-    X_valid, y_valid, cropped_indices, w_valid = crop(X_valid_uncropped, y_valid_uncropped, return_cropped_indices=True, pileup=args.pileup)
+    X_valid, y_valid, cropped_indices, w_valid = crop(X_valid_uncropped, y_valid_uncropped, 0, return_cropped_indices=True, pileup=args.pileup)
     # add cropped indices to training data
     if not args.dont_add_cropped:
         X_train.extend([x for i, x in enumerate(X_valid_uncropped) if i in cropped_indices])
@@ -283,3 +283,4 @@ def train(args):
 
 if __name__ == "__main__":
     train(args)
+

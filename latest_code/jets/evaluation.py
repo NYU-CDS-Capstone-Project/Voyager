@@ -139,7 +139,7 @@ def main():
                     #Store Y_pred and Y_test to disc
                     np.save(args.data_dir + 'Y_pred_40.csv', yy_pred)
                     np.save(args.data_dir + 'Y_test_40.csv', yy)
-                    
+                    logging.info('Files Saved') 
                     
                     logdict = dict(
                         model=filename.split('/')[-1],
@@ -250,3 +250,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

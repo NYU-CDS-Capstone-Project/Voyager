@@ -60,7 +60,7 @@ def crop(X, y, pileup_lvl, return_cropped_indices=False, pileup=False):
     elif pileup_lvl == 60:
         pt_min, pt_max, m_min, m_max = 420, 490, 270, 360    
     else:
-        pt_min, pt_max, m_min, m_max = 150, 220, 50, 110
+        pt_min, pt_max, m_min, m_max = 250, 300, 50, 110
     indices = [i for i, j in enumerate(X) if pt_min < j["pt"] < pt_max and m_min < j["mass"] < m_max]
     cropped_indices = [i for i, j in enumerate(X) if i not in indices]
     logging.warning("{} (selected) + {} (cropped) = {}".format(len(indices), len(cropped_indices), (len(indices) + len(cropped_indices))))
@@ -118,3 +118,4 @@ def load_test(tf, data_dir, filename, n_test=-1, cropping=True):
     logging.warning("\tAfter cropping: y size = %d" % len(y))
 
     return X, y, w
+

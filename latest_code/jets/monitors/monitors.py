@@ -69,7 +69,7 @@ class Best(Monitor):
 
     def call(self, yy=None, yy_pred=None, w_valid=None, **kwargs):
         value = self.monitor.value
-        cat print('============================')
+        print('============================')
         print(value)
         print('============================')
         if self.track == 'max':
@@ -118,3 +118,4 @@ class Saver(Monitor):
                 model.cuda()
         with open(self.settings_file, "wb") as f:
             pickle.dump(settings, f)
+

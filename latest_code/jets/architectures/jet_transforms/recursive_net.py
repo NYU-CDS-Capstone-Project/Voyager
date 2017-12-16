@@ -11,7 +11,7 @@ from .nn_utils import BiDirectionalTreeGRU
 class GRNNTransformSimple(nn.Module):
     def __init__(self, features=None, hidden=None,**kwargs):
         super().__init__()
-        conv = True
+        conv = False
         activation_string = 'relu'
         self.activation = getattr(F, activation_string)
         if conv:
@@ -30,7 +30,7 @@ class GRNNTransformSimple(nn.Module):
         levels, children, n_inners, contents = batch(jets)
         n_levels = len(levels)
         embeddings = []
-        conv = True
+        conv = False
 
         for i, nodes in enumerate(levels[::-1]):
             j = n_levels - 1 - i
@@ -49,7 +49,7 @@ class GRNNTransformSimple(nn.Module):
             if conv:
                 shape_u_k = u_k.size()
                 #logging.info('Before', u_k.size())
-                u_k = self.activation(self.conv_u(self.activation(self.conv_u(self.activation(self.conv_u(u_k.view(1,1,shape_u_k[0], shape_u_k[1]))))))).view(shape_u_k[0], shape_u_k[1])
+                u_k = self.activation(self.conv_u(self.activation(self.conv_u(u_k.view(1,1,shape_u_k[0], shape_u_k[1]))))).view(shape_u_k[0], shape_u_k[1])
             else:
                 u_k = self.activation(u_k)
    
@@ -68,7 +68,7 @@ class GRNNTransformSimple(nn.Module):
                 '''
                 if conv:
                     shape_h = h.size()
-                    h = self.activation(self.conv_u(self.activation(self.conv_u(self.activation(self.conv_u(h.view(1,1,shape_h[0],shape_h[1]))))))).view(shape_h[0], shape_h[1])
+                    h = self.activation(self.conv_u(self.activation(self.conv_u(h.view(1,1,shape_h[0],shape_h[1]))))).view(shape_h[0], shape_h[1])
                 else:
                     h = self.activation(h)
                 

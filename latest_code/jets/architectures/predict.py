@@ -9,7 +9,7 @@ class PredictFromParticleEmbedding(nn.Module):
 
         activation_string = 'relu'
         self.activation = getattr(F, activation_string)
-        self.conv_h = nn.Conv2d(1,1,1)
+        #self.conv_h = nn.Conv2d(1,1,1)
 
         self.fc1 = nn.Linear(hidden, hidden)
         self.fc2 = nn.Linear(hidden, hidden)
@@ -32,26 +32,12 @@ class PredictFromParticleEmbedding(nn.Module):
             h = out_stuff
 
         h = self.fc1(h)
-        '''
-           #Change the activation from RELU to 1X1 Convolution#
-        '''
-        if conv:
-            print('In here')
-            shape_h = h.size()
-            h = self.activation(self.conv_h(self.activation(self.conv_h(self.activation(self.conv_h(h.view(1,1,shape_h[0],shape_h[1]))))))).view(shape_h[0], shape_h[1])
-        else:
-            print('Not here')
-            h = self.activation(h)
+        
+        h = self.activation(h)
         
         h = self.fc2(h)
-        '''
-           #Change the activation from RELU to 1X1 Convolution#
-        '''
-        if conv:
-            shape_h = h.size()
-            h = self.activation(self.conv_h(self.activation(self.conv_h(self.activation(self.conv_h(h.view(1,1,shape_h[0],shape_h[1]))))))).view(shape_h[0], shape_h[1])
-        else:
-            h = self.activation(h)
+       
+        h = self.activation(h)
 
         h = F.sigmoid(self.fc3(h))
         if return_extras:
@@ -62,3 +48,4 @@ class PredictFromParticleEmbedding(nn.Module):
 #Huang Eisen shh419
 
 #Chow Justin jhc612
+
