@@ -512,7 +512,7 @@ def train(args):
     args.epochs = 1
     n_batches = 1
     logging.info("Lambda selected = %.8f" % args.lmbda)
-    for i in range(101):
+    for i in range(201):
         #logging.info("epoch = %d" % i)
         #logging.info("step_size = %.8f" % settings['step_size'])
         t0 = time.time()
