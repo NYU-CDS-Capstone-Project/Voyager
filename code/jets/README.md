@@ -22,9 +22,9 @@ The training script will look for data in  data/w-vs-qcd/pickles/preprocessed an
 Classification of W vs QCD jets:
 
 ```
-# Training without Adversarial Network
+# Training without Adversarial Network, for running on pileup, copy the pileup combination code from train_with_adversarial.py
 python train.py [argparse args]
-# Training with Adversarial Network
+# Training with Adversarial Network - Hardcoded for Pileup 40, 50 and 60
 python train_with_adversarial.py [argparse args]
 # Test
 python evaluation.py [argparse args]
