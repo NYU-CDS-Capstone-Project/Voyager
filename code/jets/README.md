@@ -22,8 +22,10 @@ The training script will look for data in  data/w-vs-qcd/pickles/preprocessed an
 Classification of W vs QCD jets:
 
 ```
-# Training
+# Training without Adversarial Network
 python train.py [argparse args]
+# Training with Adversarial Network
+python train_with_adversarial.py [argparse args]
 # Test
 python evaluation.py [argparse args]
 ```
